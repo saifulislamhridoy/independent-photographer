@@ -1,10 +1,12 @@
 import React from 'react';
+import banner from '../../../banner/banner.mp4'
 
 const Banner = () => {
     return (
         <div>
-            <h2 className='font-bold text-5xl'>this is banner</h2>
+            <video src={banner} type='video/mp4' autoPlay></video>
         </div>
+        
     );
 };
 
