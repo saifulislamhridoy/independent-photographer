@@ -1,8 +1,15 @@
 .signin-form{
     width: 50%;
     margin: 0 auto;
-    margin-top: 150px;
+    margin-top: 130px;
+    margin-bottom: 20px;
     height: 100vh;
+    border: 2px solid pink;
+    padding: 10px 20px;
+    border-radius: 23px;
+    background: #fdfcfc;
+    box-shadow:  10px 10px 27px #e4e3e3,
+                 -10px -10px 27px #ffffff;
 }
 .signin-form input:not([type=checkbox]){
     display: block;
@@ -10,10 +17,13 @@
     height: 50px;
     padding: 10px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border: 2px solid pink;
 }
 .signin-title{
     text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
 
 }

@@ -11,9 +11,10 @@ const SignIn = () => {
             <form>
                 <input type="email" name="email" id="" placeholder='Email Address' required/>
                 <input type="password" name="password" id="" placeholder='Passwoed' required/>
-                <p>New To PhotoShot? <Link to='/signUp'  className='text-blue-400 text-decoration-none'>Sign Up</Link></p>
+                <p>New To PhotoShot? <Link to='/signUp'  className='text-blue-500 text-decoration-none'>Sign Up</Link></p>
+                <p>Forget Your Password? <Link to=''  className='text-blue-500 text-decoration-none'>Reset Password</Link></p>
 
-                <input className='bg-pink-600 text-white' type="submit" value="Sign In" />
+                <input className='bg-pink-600 text-white mt-2' type="submit" value="Sign In" />
             </form>
             <SocialLogin></SocialLogin>
         </div>
