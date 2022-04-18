@@ -7,7 +7,6 @@ import auth from '../../firebase.init';
 const Navbar = () => {
     const links = [
         { name: 'HOME', link: '/' },
-        { name: 'SERVICES', link: '/services' },
         { name: 'BLOGS', link: '/blogs' },
         { name: 'ABOUT ME', link: '/about' },
     ]

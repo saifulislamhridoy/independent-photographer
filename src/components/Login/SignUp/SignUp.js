@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
 import auth from '../../../firebase.init';
 import SocialLogin from '../../SocialLogin/SocialLogin';
 import './SignUp.css'
@@ -26,6 +27,7 @@ const SignUp = () => {
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
         createUserWithEmailAndPassword(email,password)
+        toast('Sent Email Verification')
 
     }
     return (
@@ -46,6 +48,7 @@ const SignUp = () => {
             <input disabled={!agree} className={` ${agree ? 'bg-pink-600 text-white' : 'bg-slate-500 text-gray-400 cursor-text'} mt-4`} type="submit" value="Sign Up" />
         </form>
         <SocialLogin></SocialLogin>
+        <ToastContainer></ToastContainer>
     </div>
         </div>
     );

@@ -2,37 +2,37 @@
     {"id":1,
     "name":"Wedding Photography",
     "img":"https://image.cnbcfm.com/api/v1/image/107033018-1647627522460-gettyimages-1169477405-img_4967.jpeg?v=1647627565&w=1920&h=1080",
-    "description":"",
+    "description":"Make your moment with your family .I will take your awsome photo. I will do some wedding work with successfuly.",
     "price":200
     },
     {"id":2,
     "name":"Event Photography",
     "img":"https://media-exp3.licdn.com/dms/image/C4D1BAQFAC3o2eHS_vA/company-background_10000/0/1565182814457?e=2159024400&v=beta&t=zWT-JPXEhmCFr0L8eTn0LswSz82VWuuJBkRuPAvLN-Q",
-    "description":"",
+    "description":"Make your moment with your family .I will take your awsome photo. Check my previous event work.",
     "price":250
     },
     {"id":3,
     "name":"Family Photography",
     "img":"https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/gettyimages-1154091987.jpg?crop=1.00xw:1.00xh;0,0&resize=640:*",
-    "description":"",
+    "description":"Make your moment with your family .I will take your awsome photo. You want to take photo with me Please book now.",
     "price":150
     },
     {"id":4,
     "name":"Culture Festival",
     "img":"https://travel.mqcdn.com/mapquest/travel/wp-content/uploads/2020/06/GettyImages-132338731-scaled.jpg",
-    "description":"",
+    "description":"Make your moment with your family .I will take your awsome photo. Every cultural festival I take some photo check previous work.",
     "price":200
     },
     {"id":5,
     "name":"Birthday Celebration",
     "img":"https://www.birthdaywishes.expert/wp-content/uploads/2015/01/birthday-message-social-1.jpg?ezimgfmt=ng%3Awebp%2Fngcb1%2Frs%3Adevice%2Frscb1-2",
-    "description":"",
+    "description":"Make your moment with your family .I will take your awsome photo.",
     "price":300
     },
     {"id":6,
     "name":" Fashion Model",
     "img":"https://img.freepik.com/free-photo/fashion-model-outdoor-portrait-tourist-woman-enjoying-sightseeing-lviv-girl-looking-ancient-atchitecture_106029-855.jpg?size=626&ext=jpg&ga=GA1.2.1482000259.1637020800",
-    "description":"",
+    "description":"Make your moment.I will take your awsome photo. I will take some modeler photo check this.",
     "price":250
     }
 ]
