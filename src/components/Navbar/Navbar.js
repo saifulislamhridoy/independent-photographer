@@ -1,7 +1,7 @@
 import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const Navbar = () => {
@@ -37,7 +37,7 @@ const Navbar = () => {
                     {
                         links.map(link => (
                             <li key={link.name} className='md:ml-8 text-1xl font-bold text-gray-600 md:py-0 py-7'>
-                                <a href={link.link}>{link.name}</a>
+                                <Link to={link.link}>{link.name}</Link>
                             </li>
                         ))
                     }

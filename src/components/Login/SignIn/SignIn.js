@@ -29,7 +29,7 @@ const SignIn = () => {
       const password = passwordRef.current.value;
       signInWithEmailAndPassword(email,password)
     }
-    const handleResetPass =async()=>{
+    const handleResetPass = async()=>{
         const email = emailRef.current.value;
        if(email){
         await sendPasswordResetEmail(email)
