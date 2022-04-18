@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
     const links = [
@@ -7,6 +8,10 @@ const Navbar = () => {
         { name: 'BLOGS', link: '/blogs' },
         { name: 'ABOUT ME', link: '/about' },
     ]
+    const navigate = useNavigate()
+    const handleSignIn = () =>{
+        navigate('/signin')
+    }
     const [open, setOpen] =useState(false)
     return (
         <div className='shadow-md w-full fixed top-0 left-0 z-50'>
@@ -20,7 +25,7 @@ const Navbar = () => {
                 <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                 <ion-icon name={open ? 'close-outline' : 'menu-outline'}></ion-icon>
                 </div>
-                <ul className={`md:flex md:items-center md:pb-0 pb-8 absolute md:sticky bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-400px]'}`}>
+                <ul className={`md:flex md:items-center md:pb-0 pb-4 absolute md:sticky bg-white md:z-auto z-[-1] left-0 w-full md:w-auto transition-all duration-500 ease-in ${open ? 'top-20' : 'top-[-400px]'}`}>
                     {
                         links.map(link => (
                             <li key={link.name} className='md:ml-8 text-1xl font-bold text-gray-600 md:py-0 py-7'>
@@ -28,7 +33,7 @@ const Navbar = () => {
                             </li>
                         ))
                     }
-                    <button className='bg-pink-600 font-[poppins] md:ml-8 py-2 px-6 text-white rounded hover:bg-pink-500 duration-500'>SIGN IN</button>
+                    <button onClick={handleSignIn} className='bg-pink-600 font-[poppins] md:ml-8 py-2 px-6 text-white rounded hover:bg-pink-500 duration-500'>SIGN IN</button>
                 </ul>
             </div>
 

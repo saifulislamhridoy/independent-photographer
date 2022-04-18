@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import banner from '../../../banner/banner.mp4'
 
 const Banner = () => {
+    const navigate = useNavigate()
+   
     return (
         <div className='mt-20 z-[-1]'>
            <video className=' object-cover z-[-1] w-full h-[90vh]' autoPlay loop muted>
