@@ -1,5 +1,8 @@
+import { signOut } from 'firebase/auth';
 import React, { useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const Navbar = () => {
     const links = [
@@ -8,8 +11,13 @@ const Navbar = () => {
         { name: 'BLOGS', link: '/blogs' },
         { name: 'ABOUT ME', link: '/about' },
     ]
+    const [user]= useAuthState(auth)
     const navigate = useNavigate()
     const handleSignIn = () =>{
+        navigate('/signin')
+    }
+    const handleSignOut =()=>{
+        signOut(auth)
         navigate('/signin')
     }
     const [open, setOpen] =useState(false)
@@ -33,7 +41,11 @@ const Navbar = () => {
                             </li>
                         ))
                     }
-                    <button onClick={handleSignIn} className='bg-pink-600 font-[poppins] md:ml-8 py-2 px-6 text-white rounded hover:bg-pink-500 duration-500'>SIGN IN</button>
+                   {
+                       user ? <button onClick={handleSignOut} className='bg-pink-600 font-[poppins] md:ml-8 py-2 px-6 text-white rounded hover:bg-pink-500 duration-500'>SIGN OUT</button>
+                       :
+                       <button onClick={handleSignIn} className='bg-pink-600 font-[poppins] md:ml-8 py-2 px-6 text-white rounded hover:bg-pink-500 duration-500'>SIGN IN</button>
+                   }
                 </ul>
             </div>
 

@@ -6,7 +6,8 @@ import './SignUp.css'
 const SignUp = () => {
     const [agree,setAgree]=useState(false)
     return (
-        <div className='signup-form'>
+        <div className='h-screen'>
+            <div className='signup-form'>
         <h2 className='signup-title'>Please Sign Up</h2>
         <form>
             <input type="text" name="name" id="" placeholder='Your Name' />
@@ -20,6 +21,7 @@ const SignUp = () => {
         </form>
         <SocialLogin></SocialLogin>
     </div>
+        </div>
     );
 };
 
